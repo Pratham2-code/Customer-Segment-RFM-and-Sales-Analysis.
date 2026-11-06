@@ -307,6 +307,10 @@ Microsoft Power BI was used to create an interactive two-page report.
 
 The Sales Overview dashboard focuses on overall business performance and transactional analysis.
 
+<p align="center">
+  <img src="Powerbi%20Dashboard%20part/Sales%20Overview%20Dashboard.png" alt="Sales Overview Dashboard" width="900">
+</p>
+
 **Key Performance Indicators (KPIs)**
 
 - Total Revenue
@@ -337,6 +341,10 @@ The Sales Overview dashboard focuses on overall business performance and transac
 ### Dashboard 2: Customer Segmentation & RFM Analysis
 
 The second dashboard focuses on customer value, purchasing behaviour, and RFM segmentation.
+
+<p align="center">
+  <img src="Powerbi%20Dashboard%20part/RFM%20Segmentation%20Dashboard.png" alt="RFM Segmentation Dashboard" width="900">
+</p>
 
 **Key Performance Indicators (KPIs)**
 
@@ -392,28 +400,32 @@ Combining Frequency and Monetary metrics provides a way to explore purchasing pa
 The repository is organised around the main stages of the analytics workflow.
 
 ```text
-Customer-Segmentation-RFM-Analysis-and-Sales-Overview/
+Customer-Segment-RFM-and-Sales-Analysis/
 │
-├── Dataset/
-│   └── E-Commerce_Customer_Segmentation_4.csv
+├── Dataset preparation for analysis/
+│   ├── E-commerce_Customer_Segmentation_raw.csv
+│   ├── E-commerce_Customer_Segmentation.xlsx
+│   └── Data Audit.xlsx
 │
-├── Excel/
-│   └── Ecommerce_Data_Preprocessing.xlsx
-│
-├── SQL/
-│   ├── Data_Validation.sql
-│   ├── Business_Analysis_Queries.sql
-│   ├── RFM_Analysis.sql
-│   └── Customer_Segmentation.sql
-│
-├── PowerBI/
+├── Powerbi Dashboard part/
 │   ├── RFM_analysis.pbix
-│   └── Dashboard_Screenshots/
+│   ├── RFM Segmentation Dashboard.png
+│   ├── Sales Overview Dashboard.png
+│   ├── ecommerce_data.csv
+│   ├── rfm_scores.csv
+│   └── customer_segments.csv
+│
+├── Business queries and RFM.sql
 │
 └── README.md
 ```
 
-*The structure above is a suggested repository organisation. Adjust the filenames and folders to match the actual files you upload.*
+| Folder / File | Purpose |
+|---|---|
+| `Dataset preparation for analysis/` | Raw dataset, the Excel-cleaned version, and the data audit |
+| `Powerbi Dashboard part/` | Power BI file, dashboard screenshots, and the CSVs that feed the dashboard |
+| `Business queries and RFM.sql` | SQL for data validation, business analysis, RFM scoring, and customer segmentation |
+| `README.md` | Project documentation |
 
 ---
 
